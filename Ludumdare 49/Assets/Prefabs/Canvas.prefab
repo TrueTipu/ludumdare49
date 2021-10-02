@@ -883,6 +883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1cbd7025dba724aa3958c4766b8b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daytime: 50
+  daytime: 60
   moon: {fileID: 2147573834344527674}
   bc: {fileID: 6005944336829231288}
