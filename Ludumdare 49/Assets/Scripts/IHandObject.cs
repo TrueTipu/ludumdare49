@@ -5,6 +5,10 @@ using UnityEngine;
 public interface IHandObject
 {
     string ObjectName   { get; set; }
+    bool Active { get; set; }
+    Reactor Reactor { get; set; }
 
-    void PickUp();
+    void ChargeObject();
+    void UseObject();
+
 }

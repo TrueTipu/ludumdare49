@@ -13,8 +13,26 @@ public class Bucket : MonoBehaviour, IHandObject
         set { objectName = value; }
     }
 
-    public void PickUp()
-    {
+    public bool Active { get; set; }
 
+    public void ChargeObject()
+    {
+        if(Active == false)
+        {
+            Active = true;
+        }
     }
+
+    public Reactor Reactor { get; set; }
+
+    public void UseObject()
+    {
+        if(Reactor != null)
+        {
+            Active = false;
+            Reactor.Fix();
+        }
+    }
+    
+
 }

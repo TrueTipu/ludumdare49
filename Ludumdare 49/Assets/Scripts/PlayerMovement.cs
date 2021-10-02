@@ -11,10 +11,13 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
 
-    IHandObject handObject;
+    public IHandObject handObject;
 
     [SerializeField]
     Bucket bucket;
+
+    Reactor reactor;
+
     private void Start()
     {
         handObject = bucket;
@@ -23,7 +26,16 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(handObject.Active)
+            {
+                handObject.UseObject();
+            }
+        }
     }
+
     private void FixedUpdate()
     {
         if (movement.x != 0 && movement.y != 0)
@@ -33,5 +45,6 @@ public class PlayerMovement : MonoBehaviour
         else moveSpeed = moveSpeedDefault;
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
 
 }
