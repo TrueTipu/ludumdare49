@@ -18,8 +18,11 @@ public class PlayerMovement : MonoBehaviour
 
     Reactor reactor;
 
+    private Animator anim;
+
     private void Start()
     {
+        anim = GetComponent<Animator>();
         handObject = bucket;
     }
     void Update()
@@ -44,6 +47,15 @@ public class PlayerMovement : MonoBehaviour
         }
         else moveSpeed = moveSpeedDefault;
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        if (movement.x == 0 || movement.y == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
+        }
     }
 
 

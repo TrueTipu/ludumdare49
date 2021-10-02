@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: martti
+  m_Name: idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 8558033787705338177, guid: 93d836ae328a86249b9fc70cf8cc1556, type: 3}
-    - time: 0.35
+    - time: 0.45
       value: {fileID: 2981616992639475671, guid: 93d836ae328a86249b9fc70cf8cc1556, type: 3}
-    - time: 0.7
+    - time: 0.85
       value: {fileID: 8558033787705338177, guid: 93d836ae328a86249b9fc70cf8cc1556, type: 3}
     attribute: m_Sprite
     path: 
@@ -52,7 +52,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.71666664
+    m_StopTime: 0.8666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
