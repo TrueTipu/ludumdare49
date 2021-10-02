@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 77100251a3dd81a4b8e372484c3481b2
+guid: 93d836ae328a86249b9fc70cf8cc1556
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3187305105941169658
-    second: reaktori_0
+      213: 8558033787705338177
+    second: "ty\xF6mies_0"
   - first:
-      213: 6392040306998779209
-    second: reaktori_1
+      213: 2981616992639475671
+    second: "ty\xF6mies_1"
   - first:
-      213: -6477874137259282899
-    second: reaktori_2
+      213: -8820688423304361163
+    second: "ty\xF6mies_2"
   - first:
-      213: -4637190533482135098
-    second: reaktori_3
+      213: -8773614119942777103
+    second: "ty\xF6mies_3"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,85 +127,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: reaktori_0
+      name: "ty\xF6mies_0"
       rect:
         serializedVersion: 2
-        x: 14
-        y: 39
-        width: 77
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5
+        y: 42
+        width: 21
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5020025, y: 0.0005670166}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60a7699a4ea64c3d0800000000000000
-      internalID: -3187305105941169658
+      spriteID: 149a7f3336e34c670800000000000000
+      internalID: 8558033787705338177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: reaktori_1
+      name: "ty\xF6mies_1"
       rect:
         serializedVersion: 2
-        x: 121
-        y: 39
-        width: 77
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 31
+        y: 42
+        width: 21
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0030380886}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94d14a0fac615b850800000000000000
-      internalID: 6392040306998779209
+      spriteID: 7df5b868bd4d06920800000000000000
+      internalID: 2981616992639475671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: reaktori_2
+      name: "ty\xF6mies_2"
       rect:
         serializedVersion: 2
-        x: 228
-        y: 39
-        width: 77
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 14
+        width: 22
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4960686, y: 0.005285454}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2e68fc1bc7f916a0800000000000000
-      internalID: -6477874137259282899
+      spriteID: 53b0b8eec9e969580800000000000000
+      internalID: -8820688423304361163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: reaktori_3
+      name: "ty\xF6mies_3"
       rect:
         serializedVersion: 2
-        x: 332
-        y: 39
-        width: 76
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 14
+        width: 21
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0018261337}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c14ef757c365afb0800000000000000
-      internalID: -4637190533482135098
+      spriteID: 1f69578417cdd3680800000000000000
+      internalID: -8773614119942777103
       vertices: []
       indices: 
       edges: []
