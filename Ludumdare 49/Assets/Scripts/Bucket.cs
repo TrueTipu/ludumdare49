@@ -26,6 +26,8 @@ public class Bucket : MonoBehaviour, IHandObject
 
     public Reactor Reactor { get; set; }
 
+    public bool firstTime = false;
+
     public void UseObject(bool river)
     {
         if(Reactor != null && Active)
@@ -33,11 +35,22 @@ public class Bucket : MonoBehaviour, IHandObject
             Active = false;
             Debug.Log("tyhäj");
             Reactor.Fix();
+
+            if (firstTime == true)
+            {
+                TutorialText.NextLine();
+                firstTime = false;
+            }
         }
-        if(river)
+        if(river && !Active)
         {
             Active = true;
             Debug.Log("täyh");
+
+            if (firstTime == true)
+            {
+                TutorialText.NextLine();
+            }
         }
     }
     

@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ebae5ee60368a4b871cb5d8b06d29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstTime: 0
 --- !u!1 &6348199946492394750
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +163,7 @@ MonoBehaviour:
   moveSpeedDefault: 5
   rb: {fileID: 1801825786}
   bucket: {fileID: 5487090244003745498}
+  river: 0
 --- !u!95 &1801825790
 Animator:
   serializedVersion: 3
