@@ -49,7 +49,15 @@ public class ReactorManager : MonoBehaviour
 
         timer = 0;
         currentEvent = eventIndex + 1;
-        waitTime = eventDatas[currentEvent].time;
+        if (eventIndex < eventDatas.Count)
+        {
+            waitTime = eventDatas[currentEvent].time;
+        }
+        else
+        {
+            return;
+        }
+
     }
 
     public void Log1()
