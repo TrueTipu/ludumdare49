@@ -7,17 +7,39 @@ public class Reactor : MonoBehaviour
 
     int state = 0;
 
-    public float difficulty;
-    public float baseTime;
+    [System.Serializable]
+    public class ReactorData
+    {
+        public string name;
+        public Reactor reactor;
+
+        public bool active;
+        public float difficulty;
+        public float baseTime;
+    }
+
+    ReactorData data;
 
     float timeOnState;
     float maxTimeOnState;
 
     PlayerMovement player;
 
+    bool active;
+    float difficulty;
+    float baseTime;
+
+    public void SetData(ReactorData reactorData)
+    {
+        active = reactorData.active;
+        difficulty = reactorData.difficulty;
+        baseTime = reactorData.baseTime;
+    }
+
 
     void Update()
     {
+        if(data.active)
         timeOnState += Time.deltaTime;
         if(timeOnState >= maxTimeOnState)
         {
@@ -28,7 +50,7 @@ public class Reactor : MonoBehaviour
 
     void NewStateActivate()
     {
-        maxTimeOnState = baseTime / Random.Range(1, difficulty);
+        maxTimeOnState = data.baseTime / Random.Range(1, data.difficulty);
         timeOnState = 0;
     }
 
