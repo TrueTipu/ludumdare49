@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         else moveSpeed = moveSpeedDefault;
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
-        if (movement.x == 0 || movement.y == 0)
+        if (movement.x == 0 && movement.y == 0)
         {
             anim.SetBool("isRunning", false);
         }
