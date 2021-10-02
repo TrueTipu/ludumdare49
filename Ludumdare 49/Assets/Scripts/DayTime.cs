@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class DayTime : MonoBehaviour
 {
@@ -9,7 +11,10 @@ public class DayTime : MonoBehaviour
     float timer;
 
     [SerializeField]
-    Transform childSlider;
+    Image moon;
+    [SerializeField]
+    Image bc;
+
 
     void Awake()
     {
@@ -24,6 +29,7 @@ public class DayTime : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        childSlider.localScale = new Vector2(timer / daytime, 1);
+        moon.fillAmount = timer / daytime;
+        bc.fillAmount = timer / daytime;
     }
 }
