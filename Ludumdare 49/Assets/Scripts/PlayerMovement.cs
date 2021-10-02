@@ -33,14 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(handObject.Active)
-            {
-                handObject.UseObject(false);
-            }
-            else
-            {
-                handObject.UseObject(river);
-            }
+            handObject.UseObject(river);
         }
     }
 
