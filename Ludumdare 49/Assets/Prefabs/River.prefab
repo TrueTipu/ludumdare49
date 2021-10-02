@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5031383881585163038}
   - component: {fileID: 5031383881585163025}
   - component: {fileID: 5031383881585163024}
+  - component: {fileID: -1424520263745502248}
   m_Layer: 0
   m_Name: River
   m_TagString: Untagged
@@ -110,3 +111,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-1424520263745502248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031383881585163027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e4e9f6fb8e3994080192a186d46924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

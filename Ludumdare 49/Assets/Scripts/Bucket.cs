@@ -20,6 +20,7 @@ public class Bucket : MonoBehaviour, IHandObject
         if(Active == false)
         {
             Active = true;
+            Debug.Log("täyn");
         }
     }
 
@@ -30,6 +31,7 @@ public class Bucket : MonoBehaviour, IHandObject
         if(Reactor != null)
         {
             Active = false;
+            Debug.Log("tyhäj");
             Reactor.Fix();
         }
     }

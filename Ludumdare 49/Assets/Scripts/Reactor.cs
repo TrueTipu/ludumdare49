@@ -23,7 +23,6 @@ public class Reactor : MonoBehaviour
         {
             NewStateActivate();
             state += 1;
-            Debug.Log(state);
         }
     }
 
@@ -35,6 +34,7 @@ public class Reactor : MonoBehaviour
 
     public void Fix()
     {
+        Debug.Log("fixed");
         state = 0;
         NewStateActivate();
     }
