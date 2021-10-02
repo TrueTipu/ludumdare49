@@ -690,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 245679098744559444, guid: fc36e81357785a94c82b8c31e6ca144f, type: 3}
       propertyPath: eventDatas.Array.data[2].action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2038208903}
+      objectReference: {fileID: 1399774381}
     - target: {fileID: 245679098744559444, guid: fc36e81357785a94c82b8c31e6ca144f, type: 3}
       propertyPath: eventDatas.Array.data[2].action.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1398,7 +1398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1399774382
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1799,7 +1799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2038208904
 MonoBehaviour:
   m_ObjectHideFlags: 0
