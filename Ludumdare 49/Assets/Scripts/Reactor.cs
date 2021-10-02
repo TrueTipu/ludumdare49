@@ -5,7 +5,10 @@ using UnityEngine;
 public class Reactor : MonoBehaviour
 {
 
-    int state = 0;
+    public int state = 0;
+
+    [SerializeField]
+    Animator animator;
 
     [System.Serializable]
     public class ReactorData
@@ -45,6 +48,7 @@ public class Reactor : MonoBehaviour
             {
                 NewStateActivate();
                 state += 1;
+                animator.SetFloat("State", state);
             }
         }
     }
@@ -59,6 +63,7 @@ public class Reactor : MonoBehaviour
     {
         Debug.Log("fixed");
         state = 0;
+        animator.SetFloat("State", state);
         NewStateActivate();
     }
 
@@ -77,5 +82,14 @@ public class Reactor : MonoBehaviour
         {
             player.handObject.Reactor = null;
         }
+    }
+
+    public void Activate()
+    {
+        active = true;
+    }
+    public void ChangeDifficulty(int newDifficulty)
+    {
+        difficulty = newDifficulty;
     }
 }
