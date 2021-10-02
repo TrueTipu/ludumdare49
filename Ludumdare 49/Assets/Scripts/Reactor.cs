@@ -18,16 +18,15 @@ public class Reactor : MonoBehaviour
         public float baseTime;
     }
 
-    ReactorData data;
 
     float timeOnState;
     float maxTimeOnState;
 
     PlayerMovement player;
 
-    bool active;
-    float difficulty;
-    float baseTime;
+    bool active = true;
+    float difficulty = 2;
+    float baseTime = 10;
 
     public void SetData(ReactorData reactorData)
     {
@@ -52,7 +51,7 @@ public class Reactor : MonoBehaviour
 
     void NewStateActivate()
     {
-        maxTimeOnState = data.baseTime / Random.Range(1, data.difficulty);
+        maxTimeOnState = baseTime / Random.Range(1, difficulty);
         timeOnState = 0;
     }
 
