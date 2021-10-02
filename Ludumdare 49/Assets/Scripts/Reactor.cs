@@ -39,12 +39,14 @@ public class Reactor : MonoBehaviour
 
     void Update()
     {
-        if(data.active)
-        timeOnState += Time.deltaTime;
-        if(timeOnState >= maxTimeOnState)
+        if (active)
         {
-            NewStateActivate();
-            state += 1;
+            timeOnState += Time.deltaTime;
+            if (timeOnState >= maxTimeOnState)
+            {
+                NewStateActivate();
+                state += 1;
+            }
         }
     }
 
