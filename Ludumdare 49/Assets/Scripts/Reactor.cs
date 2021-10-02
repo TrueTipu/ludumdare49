@@ -50,24 +50,10 @@ public class Reactor : MonoBehaviour
                 state += 1;
                 animator.SetFloat("State", state);
             }
-        }
-
-        if (state == 1)
-        {
-            animator.SetTrigger("yks");
-        }
-        if (state == 2)
-        {
-            animator.SetTrigger("kaks");
-        }
-        if (state == 3)
-        {
-            animator.SetTrigger("kolme");
-        }
-        if (state == 4)
-        {
-            animator.SetTrigger("nelja");
-            active = false;
+            if (state == 4)
+            {
+                active = false;
+            }
         }
 
     }
