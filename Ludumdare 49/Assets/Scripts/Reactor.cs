@@ -51,6 +51,25 @@ public class Reactor : MonoBehaviour
                 animator.SetFloat("State", state);
             }
         }
+
+        if (state == 1)
+        {
+            animator.SetTrigger("yks");
+        }
+        if (state == 2)
+        {
+            animator.SetTrigger("kaks");
+        }
+        if (state == 3)
+        {
+            animator.SetTrigger("kolme");
+        }
+        if (state == 4)
+        {
+            animator.SetTrigger("nelja");
+            active = false;
+        }
+
     }
 
     void NewStateActivate()
@@ -62,7 +81,7 @@ public class Reactor : MonoBehaviour
     public void Fix()
     {
         Debug.Log("fixed");
-        state = 0;
+        state = 1;
         animator.SetFloat("State", state);
         NewStateActivate();
     }
