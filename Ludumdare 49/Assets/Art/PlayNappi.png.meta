@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: abf2ccef5ddb12a409d51d7aa8512f1f
+guid: a3ec2596d65a1344cb0e9e332f49ab2f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3955059097881289639
-    second: HouseSprite_0
+      213: 705634209117639489
+    second: PlayNappi_0
   - first:
-      213: 6554333211804927556
-    second: HouseSprite_1
+      213: -4519320264397746563
+    second: PlayNappi_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -145,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HouseSprite_0
+      name: PlayNappi_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 62
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95cdb1d84becc19c0800000000000000
-      internalID: -3955059097881289639
+      spriteID: 14312d7139aeac900800000000000000
+      internalID: 705634209117639489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HouseSprite_1
+      name: PlayNappi_1
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 62
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4468d2d645ba5fa50800000000000000
-      internalID: 6554333211804927556
+      spriteID: d7e0956f9262841c0800000000000000
+      internalID: -4519320264397746563
       vertices: []
       indices: 
       edges: []
