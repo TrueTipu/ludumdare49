@@ -10,12 +10,19 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
 
     Vector2 movement;
-   
+
+    IHandObject handObject;
+
+    [SerializeField]
+    Bucket bucket;
+    private void Start()
+    {
+        handObject = bucket;
+    }
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
     }
     private void FixedUpdate()
     {
