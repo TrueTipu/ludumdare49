@@ -44,8 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3e407f3b77af546a6e410525de7b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 2
-  baseTime: 10
 --- !u!61 &2275372882692347007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -99,7 +97,7 @@ Transform:
   m_GameObject: {fileID: 8888549074587944441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.7337456, y: 2.7337456, z: 2.7337456}
   m_Children:
   - {fileID: 1200532719124716843}
   m_Father: {fileID: 0}
