@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     Bucket bucket;
 
     Reactor reactor;
+    public bool river;
 
     private Animator anim;
 
@@ -34,7 +35,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if(handObject.Active)
             {
-                handObject.UseObject();
+                handObject.UseObject(false);
+            }
+            else
+            {
+                handObject.UseObject(river);
             }
         }
     }

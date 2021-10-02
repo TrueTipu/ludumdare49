@@ -26,13 +26,18 @@ public class Bucket : MonoBehaviour, IHandObject
 
     public Reactor Reactor { get; set; }
 
-    public void UseObject()
+    public void UseObject(bool river)
     {
         if(Reactor != null)
         {
             Active = false;
             Debug.Log("tyhäj");
             Reactor.Fix();
+        }
+        if(river)
+        {
+            Active = true;
+            Debug.Log("täyh");
         }
     }
     

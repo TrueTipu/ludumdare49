@@ -9,13 +9,18 @@ public class River/*forgeGames*/ : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             player = collision.GetComponent<PlayerMovement>();
-            if(player.handObject.ObjectName == "Bucket")
-            {
-                player.handObject.ChargeObject();
-            }
+            player.river = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            player.river = false;
         }
     }
 

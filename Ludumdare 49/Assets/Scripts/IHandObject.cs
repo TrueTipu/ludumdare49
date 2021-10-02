@@ -9,6 +9,6 @@ public interface IHandObject
     Reactor Reactor { get; set; }
 
     void ChargeObject();
-    void UseObject();
+    void UseObject(bool field);
 
 }
