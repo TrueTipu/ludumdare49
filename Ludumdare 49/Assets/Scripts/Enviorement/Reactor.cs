@@ -61,6 +61,7 @@ public class Reactor : MonoBehaviour
             }
             if (state == 4)
             {
+                FindObjectOfType<AudioManager>().Play("Räjähdys");
                 shake.CamShake();
                 active = false;
                 Instantiate(effect, transform.position, Quaternion.identity);

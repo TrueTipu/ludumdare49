@@ -43,4 +43,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614923f3847d0cf45b3e99595dbd92bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: "K\xE4vely"
+    clip: {fileID: 8300000, guid: 47c3c184edc70fb489d92af4d9253fc5, type: 3}
+    loop: 1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: "R\xE4j\xE4hdys"
+    clip: {fileID: 8300000, guid: 8dfd5174e7ff431499ac8c14495b7b64, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Vesi heitto
+    clip: {fileID: 8300000, guid: cf8b2dfd98f9e474c8c33d4b1502b343, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Vesi keruu
+    clip: {fileID: 8300000, guid: 242f7848f8d6c444fa5fd7163b7560cb, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
