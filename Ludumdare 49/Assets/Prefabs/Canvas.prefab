@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 99de4d316b4031149acd65e08a11af4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22e0ac571425ee841a97c7d3af7cea06, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 5387612287596660777}
   - component: {fileID: 5387612287596660778}
   - component: {fileID: 5387612287596660779}
+  - component: {fileID: 2280058787229124168}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -427,6 +428,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2280058787229124168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387612287596660772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad0e17a49452af41b132184eebd5bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayAnim: {fileID: 1951368487}
 --- !u!1 &5387612287722565276
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +694,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5387612288749296050}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5387612287596660772}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5752977442141026302
 GameObject:
   m_ObjectHideFlags: 0

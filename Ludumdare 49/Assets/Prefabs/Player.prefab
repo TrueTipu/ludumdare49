@@ -120,7 +120,7 @@ MonoBehaviour:
   bucket: {fileID: 0}
   river: 0
   radius: 1
-  itemPos: {x: -0.116, y: 0.01, z: 0}
+  itemPos: {x: -0.114, y: 0.015, z: 0}
 --- !u!95 &1801825790
 Animator:
   serializedVersion: 3
