@@ -40,9 +40,9 @@ public class Reactor : MonoBehaviour
         baseTime = reactorData.baseTime;
     }
 
-    void start()
+    void Start()
     {
-        shake = GameObject.FindGameObjectWithTag("screenshake").GetComponent<CShake>();
+        shake = FindObjectOfType<CShake>();
     }
 
 

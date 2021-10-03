@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CShake : MonoBehaviour
 {
-    public Animator camAnim;
+    [SerializeField]
+    Animator camAnim;
 
     public void CamShake()
     {
