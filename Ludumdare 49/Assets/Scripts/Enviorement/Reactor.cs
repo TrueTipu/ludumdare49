@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Reactor : MonoBehaviour
+public class Reactor : MonoBehaviour, IFixableThing
 {
 
     public int state = 0;
@@ -65,7 +65,7 @@ public class Reactor : MonoBehaviour
                 {
                     if(player.handObject != null)
                     {
-                        player.handObject.Reactor = null;
+                        player.handObject.FixableThing = null;
                     }
                 }
                 FindObjectOfType<AudioManager>().Play("Räjähdys");
@@ -103,7 +103,7 @@ public class Reactor : MonoBehaviour
         if (collision.CompareTag("Player") && active)
         {
             player = collision.GetComponent<PlayerMovement>();
-            player.handObject.Reactor = this;
+            player.handObject.FixableThing = this;
         }
     }
 
@@ -115,7 +115,7 @@ public class Reactor : MonoBehaviour
             {
                 if (player.handObject != null)
                 {
-                    player.handObject.Reactor = null;
+                    player.handObject.FixableThing = null;
                 }
             }
         }

@@ -6,9 +6,8 @@ public interface IHandObject
 {
     string ObjectName   { get; set; }
     bool Active { get; set; }
-    Reactor Reactor { get; set; }
+    IFixableThing FixableThing { get; set; }
 
-    void ChargeObject();
     void UseObject(bool field);
 
 }
