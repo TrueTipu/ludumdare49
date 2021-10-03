@@ -61,13 +61,19 @@ public class Reactor : MonoBehaviour
             }
             if (state == 4)
             {
+                if(player != null)
+                {
+                    if(player.handObject != null)
+                    {
+                        player.handObject.Reactor = null;
+                    }
+                }
                 FindObjectOfType<AudioManager>().Play("Räjähdys");
                 shake.CamShake();
                 active = false;
                 Instantiate(effect, transform.position, Quaternion.identity);
             }
         }
-
     }
 
     void NewStateActivate()
@@ -86,7 +92,7 @@ public class Reactor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && active)
         {
             player = collision.GetComponent<PlayerMovement>();
             player.handObject.Reactor = this;
@@ -95,7 +101,7 @@ public class Reactor : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && active)
         {
             player.handObject.Reactor = null;
         }
