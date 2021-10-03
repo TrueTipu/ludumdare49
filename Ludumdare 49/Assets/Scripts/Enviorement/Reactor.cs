@@ -28,7 +28,7 @@ public class Reactor : MonoBehaviour
     PlayerMovement player;
 
     bool active = true;
-    float difficulty = 2;
+    float difficulty = 1;
     float baseTime = 10;
 
     private CShake shake;
@@ -72,10 +72,18 @@ public class Reactor : MonoBehaviour
                 shake.CamShake();
                 active = false;
                 Instantiate(effect, transform.position, Quaternion.identity);
+                DifficultyIncrease();
             }
         }
     }
-
+    void DifficultyIncrease()
+    {
+        Reactor[] reactors = FindObjectsOfType<Reactor>();
+        foreach (Reactor reactor in reactors)
+        {
+            reactor.ChangeDifficulty(1);
+        }
+    }
     void NewStateActivate()
     {
         maxTimeOnState = baseTime / Random.Range(1, difficulty);
@@ -113,6 +121,10 @@ public class Reactor : MonoBehaviour
     }
     public void ChangeDifficulty(int newDifficulty)
     {
-        difficulty = newDifficulty;
+        difficulty += newDifficulty;
+    }
+    public void ChangeBaseSpeed(int newDifficulty)
+    {
+        baseTime = newDifficulty;
     }
 }
