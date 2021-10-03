@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: b9e77138f7882514489c95f611b37072
+guid: 5d11db7973f74a440baa58bc7f79b266
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 7820248889825683832
-    second: "\xE4mp\xE4ri_0"
-  - first:
-      213: 6469026408526892658
-    second: "\xE4mp\xE4ri_1"
-  - first:
-      213: 1716567590130087993
-    second: "\xE4mp\xE4ri_2"
-  - first:
-      213: 3509491779289938117
-    second: "\xE4mp\xE4ri_3"
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -79,10 +67,10 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -91,10 +79,10 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -103,10 +91,34 @@ TextureImporter:
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -115,101 +127,17 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: "\xE4mp\xE4ri_0"
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 31
-        width: 14
-        height: 16
-      alignment: 9
-      pivot: {x: 0.48851272, y: 0.017543674}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 879e33d8eea178c60800000000000000
-      internalID: 7820248889825683832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\xE4mp\xE4ri_1"
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 31
-        width: 14
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.037645936}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27ecdd28e3996c950800000000000000
-      internalID: 6469026408526892658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\xE4mp\xE4ri_2"
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 9
-        width: 22
-        height: 18
-      alignment: 9
-      pivot: {x: 0.8728069, y: 0.20963308}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 938f6a2e02972d710800000000000000
-      internalID: 1716567590130087993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\xE4mp\xE4ri_3"
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 10
-        width: 17
-        height: 17
-      alignment: 9
-      pivot: {x: 0.81690735, y: 0.18309256}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c8fabedd2834b030800000000000000
-      internalID: 3509491779289938117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
