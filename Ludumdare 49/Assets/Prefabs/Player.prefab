@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bucket
       objectReference: {fileID: 0}
+    - target: {fileID: 582259343207999699, guid: 560b38862a6bd4442b95950d2fdd03ab, type: 3}
+      propertyPath: firstTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2871427832831883233, guid: 560b38862a6bd4442b95950d2fdd03ab, type: 3}
       propertyPath: m_Size.x
       value: 0.14
@@ -182,10 +186,10 @@ PrefabInstance:
     - target: {fileID: 2871427832831883233, guid: 560b38862a6bd4442b95950d2fdd03ab, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6469026408526892658, guid: b9e77138f7882514489c95f611b37072, type: 3}
+      objectReference: {fileID: 1716567590130087993, guid: b9e77138f7882514489c95f611b37072, type: 3}
     - target: {fileID: 2871427832831883233, guid: 560b38862a6bd4442b95950d2fdd03ab, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2871427832831883233, guid: 560b38862a6bd4442b95950d2fdd03ab, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -205,11 +209,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7421256361913123371, guid: 560b38862a6bd4442b95950d2fdd03ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1251
+      value: -0.087
       objectReference: {fileID: 0}
     - target: {fileID: 7421256361913123371, guid: 560b38862a6bd4442b95950d2fdd03ab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.036
+      value: 0.064
       objectReference: {fileID: 0}
     - target: {fileID: 7421256361913123371, guid: 560b38862a6bd4442b95950d2fdd03ab, type: 3}
       propertyPath: m_LocalPosition.z

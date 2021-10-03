@@ -111,7 +111,13 @@ public class Reactor : MonoBehaviour
     {
         if (collision.CompareTag("Player") && active)
         {
-            player.handObject.Reactor = null;
+            if (player != null)
+            {
+                if (player.handObject != null)
+                {
+                    player.handObject.Reactor = null;
+                }
+            }
         }
     }
 
