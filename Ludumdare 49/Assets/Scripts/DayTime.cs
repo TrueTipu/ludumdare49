@@ -13,23 +13,26 @@ public class DayTime : MonoBehaviour
     [SerializeField]
     Image moon;
     [SerializeField]
-    Image bc;
+    Image sun;
 
 
     void Awake()
     {
-        SetPositionAndScale();
+        StartCoroutine(SlowUpdate());
     }
 
-    void SetPositionAndScale()
+    IEnumerator SlowUpdate()
     {
-
-    }
-
-    void Update()
-    {
-        timer += Time.deltaTime;
-        moon.fillAmount = timer / daytime;
-        bc.fillAmount = timer / daytime;
+        while(true)
+        {
+            timer += 0.2f;
+            moon.fillAmount = timer / daytime;
+            sun.fillAmount = 1 - timer / daytime;
+            yield return new WaitForSeconds(0.2f);
+            if(timer > daytime)
+            {
+                break;
+            }
+        }
     }
 }
