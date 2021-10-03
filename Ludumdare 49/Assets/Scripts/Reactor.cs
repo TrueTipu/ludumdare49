@@ -31,11 +31,18 @@ public class Reactor : MonoBehaviour
     float difficulty = 2;
     float baseTime = 10;
 
+    private CShake shake;
+
     public void SetData(ReactorData reactorData)
     {
         active = reactorData.active;
         difficulty = reactorData.difficulty;
         baseTime = reactorData.baseTime;
+    }
+
+    void Start()
+    {
+        shake = FindObjectOfType<CShake>();
     }
 
 
@@ -52,6 +59,7 @@ public class Reactor : MonoBehaviour
             }
             if (state == 4)
             {
+                shake.CamShake();
                 active = false;
             }
         }
