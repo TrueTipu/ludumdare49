@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bucket : MonoBehaviour, IHandObject
 {
+    [SerializeField]
+    Animator animator;
+
 
     private string objectName = "Bucket";
 
@@ -33,6 +36,7 @@ public class Bucket : MonoBehaviour, IHandObject
         if(Reactor != null && Active)
         {
             Active = false;
+            animator.SetBool("Vesi", false);
             Debug.Log("tyhäj");
             Reactor.Fix();
             FindObjectOfType<AudioManager>().Play("Vesi heitto");
@@ -46,6 +50,7 @@ public class Bucket : MonoBehaviour, IHandObject
         {
             Active = true;
             Debug.Log("täyh");
+            animator.SetBool("Vesi", true);
             FindObjectOfType<AudioManager>().Play("Vesi keruu");
             if (firstTime == true)
             {

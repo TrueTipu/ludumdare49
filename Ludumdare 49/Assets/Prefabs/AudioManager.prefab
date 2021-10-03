@@ -68,3 +68,9 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: musa
+    clip: {fileID: 8300000, guid: f065bde08cbcb464caa01a9448b31d06, type: 3}
+    loop: 1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
