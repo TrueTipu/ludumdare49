@@ -35,7 +35,7 @@ public class Bucket : MonoBehaviour, IHandObject
             Active = false;
             Debug.Log("tyhäj");
             Reactor.Fix();
-
+            FindObjectOfType<AudioManager>().Play("Vesi heitto");
             if (firstTime == true)
             {
                 TutorialText.NextLine();
@@ -46,7 +46,7 @@ public class Bucket : MonoBehaviour, IHandObject
         {
             Active = true;
             Debug.Log("täyh");
-
+            FindObjectOfType<AudioManager>().Play("Vesi keruu");
             if (firstTime == true)
             {
                 TutorialText.NextLine();

@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public bool river;
 
     private Animator anim;
+    bool moving;
 
     private void Start()
     {
@@ -48,10 +49,20 @@ public class PlayerMovement : MonoBehaviour
 
         if (movement.x == 0 && movement.y == 0)
         {
-            anim.SetBool("isRunning", false);
+            if (moving == true)
+            {
+                moving = false;
+                anim.SetBool("isRunning", false);
+                FindObjectOfType<AudioManager>().Stop("Kävely");
+            }
         }
         else
         {
+            if (moving == false)
+            {
+                moving = true;
+                FindObjectOfType<AudioManager>().Play("Kävely");
+            }
             anim.SetBool("isRunning", true);
         }
     }
