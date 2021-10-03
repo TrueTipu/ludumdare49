@@ -21,7 +21,10 @@ public class Slime : MonoBehaviour, IFixableThing
         if (collision.CompareTag("Player"))
         {
             player = collision.GetComponent<PlayerMovement>();
-            player.handObject.FixableThing = this;
+            if (player.handObject != null)
+            {
+                player.handObject.FixableThing = this;
+            }
         }
     }
 

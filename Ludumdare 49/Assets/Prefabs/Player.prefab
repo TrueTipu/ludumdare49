@@ -120,6 +120,7 @@ MonoBehaviour:
   rb: {fileID: 1801825786}
   bucket: {fileID: 5487090244003745498}
   river: 0
+  radius: 1
 --- !u!95 &1801825790
 Animator:
   serializedVersion: 3

@@ -7,6 +7,13 @@ public class Bucket : MonoBehaviour, IHandObject
     [SerializeField]
     Animator animator;
 
+    public GameObject GameObject
+    {
+        get { return this.gameObject; }
+        set { GameObject = value; }
+    }
+
+
 
     private string objectName = "Bucket";
 
@@ -63,6 +70,4 @@ public class Bucket : MonoBehaviour, IHandObject
             }
         }
     }
-    
-
 }

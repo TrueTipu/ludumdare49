@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     bool moving;
 
+    public float radius;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -36,6 +38,37 @@ public class PlayerMovement : MonoBehaviour
         {
             handObject.UseObject(river);
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if(handObject != null)
+            {
+                DropObject();
+            }
+            else
+            {
+                TryPickObject();
+            }
+        }
+    }
+
+    void TryPickObject()
+    {
+        Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, radius);
+        foreach (Collider2D possibleHandObject in objects)
+        {
+            if(possibleHandObject.CompareTag("HandObject"))
+            {
+                handObject = possibleHandObject.GetComponent<IHandObject>();
+                handObject.GameObject.transform.SetParent(this.transform);
+            }
+        }
+    }
+
+    void DropObject()
+    {
+        handObject.GameObject.transform.SetParent(null);
+        handObject.GameObject.transform.position = transform.position;
+        handObject = null;
     }
 
     private void FixedUpdate()

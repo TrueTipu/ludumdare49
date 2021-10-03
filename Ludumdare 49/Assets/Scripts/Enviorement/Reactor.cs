@@ -103,7 +103,10 @@ public class Reactor : MonoBehaviour, IFixableThing
         if (collision.CompareTag("Player") && active)
         {
             player = collision.GetComponent<PlayerMovement>();
-            player.handObject.FixableThing = this;
+            if (player.handObject != null)
+            {
+                player.handObject.FixableThing = this;
+            }
         }
     }
 
