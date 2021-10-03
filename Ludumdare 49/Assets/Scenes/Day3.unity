@@ -291,6 +291,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5387612288749296051, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387612288749296051, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 336228267}
+    - target: {fileID: 5387612288749296051, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387612288749296051, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
 --- !u!1 &336228266 stripped
@@ -298,6 +314,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5387612286957964558, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
   m_PrefabInstance: {fileID: 336228265}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &336228267 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2280058787229124168, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
+  m_PrefabInstance: {fileID: 336228265}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad0e17a49452af41b132184eebd5bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &418109158
 PrefabInstance:
   m_ObjectHideFlags: 0
