@@ -797,6 +797,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1951368488, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5387612287596660772, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -897,6 +901,10 @@ PrefabInstance:
     - target: {fileID: 4240450758955274890, guid: ed15f3b06fc6d09479e187072a333e86, type: 3}
       propertyPath: m_Name
       value: ZoneCollider 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684065235272141430, guid: ed15f3b06fc6d09479e187072a333e86, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8888549074587944441, guid: ed15f3b06fc6d09479e187072a333e86, type: 3}
       propertyPath: m_Name
@@ -1515,7 +1523,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2241023339498629876, guid: 419fffce58b9d944e8e0e72fb3ff47ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1534,6 +1542,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8184418396962006492}
     m_Modifications:
+    - target: {fileID: 7684065235272141430, guid: ed15f3b06fc6d09479e187072a333e86, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8888549074587944441, guid: ed15f3b06fc6d09479e187072a333e86, type: 3}
       propertyPath: m_Name
       value: Reactor
