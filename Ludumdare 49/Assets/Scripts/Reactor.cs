@@ -33,6 +33,8 @@ public class Reactor : MonoBehaviour
 
     private CShake shake;
 
+    public GameObject effect;
+
     public void SetData(ReactorData reactorData)
     {
         active = reactorData.active;
@@ -61,6 +63,7 @@ public class Reactor : MonoBehaviour
             {
                 shake.CamShake();
                 active = false;
+                Instantiate(effect, transform.position, Quaternion.identity);
             }
         }
 
