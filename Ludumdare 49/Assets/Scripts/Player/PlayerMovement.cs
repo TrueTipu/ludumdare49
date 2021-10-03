@@ -62,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(possibleHandObject.CompareTag("HandObject"))
             {
+                FindObjectOfType<AudioManager>().Play("Pick");
                 handObject = possibleHandObject.GetComponent<IHandObject>();
                 handObject.GameObject.transform.SetParent(this.transform);
                 handObject.GameObject.transform.localPosition = itemPos;
@@ -72,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
     void DropObject()
     {
+        FindObjectOfType<AudioManager>().Play("Drop");
         handObject.GameObject.transform.SetParent(null);
         handObject.GameObject.transform.position = transform.position;
         handObject = null;

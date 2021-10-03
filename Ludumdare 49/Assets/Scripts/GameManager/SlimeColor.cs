@@ -27,7 +27,7 @@ public class SlimeColor : MonoBehaviour
             }
             else
             {
-                image.color = new Color(255, 255, 255, (image.color.a - speed));
+                image.color = new Color(255, 255, 255, (image.color.a - speed * 2));
             }
             yield return new WaitForSeconds(0.5f);
         }

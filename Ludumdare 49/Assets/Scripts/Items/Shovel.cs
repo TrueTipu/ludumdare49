@@ -35,7 +35,7 @@ public class Shovel : MonoBehaviour, IHandObject
             animator.SetTrigger("Kaiva");
             //Debug.Log("tyhäj");
             Slime.Fix();
-            //FindObjectOfType<AudioManager>().Play("Vesi heitto");
+            FindObjectOfType<AudioManager>().Play("Lapio");
             if (firstTime == true)
             {
                 TutorialText.NextLine();

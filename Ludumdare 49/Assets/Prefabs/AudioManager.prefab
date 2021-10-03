@@ -74,3 +74,21 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: Drop
+    clip: {fileID: 8300000, guid: e81801ccd3b00b54aa465f70e7ed3494, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Pick
+    clip: {fileID: 8300000, guid: a796042d813fbed40bc08547e05a0932, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Lapio
+    clip: {fileID: 8300000, guid: 14b86c1062918df41934f94172ca144b, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
