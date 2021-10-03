@@ -32,7 +32,7 @@ public class Shovel : MonoBehaviour, IHandObject
     {
         if(Slime != null)
         {
-            //animator.SetBool("Vesi", false);
+            animator.SetTrigger("Kaiva");
             //Debug.Log("tyhäj");
             Slime.Fix();
             //FindObjectOfType<AudioManager>().Play("Vesi heitto");
