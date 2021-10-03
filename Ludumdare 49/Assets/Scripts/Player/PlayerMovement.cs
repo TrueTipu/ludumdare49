@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     bool moving;
 
     public float radius;
+    public Vector3 itemPos;
 
     private void Start()
     {
@@ -36,7 +37,10 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            handObject.UseObject(river);
+            if (handObject != null)
+            {
+                handObject.UseObject(river);
+            }
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -60,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 handObject = possibleHandObject.GetComponent<IHandObject>();
                 handObject.GameObject.transform.SetParent(this.transform);
+                handObject.GameObject.transform.localPosition = itemPos;
             }
         }
     }
