@@ -65,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
                 handObject = possibleHandObject.GetComponent<IHandObject>();
                 handObject.GameObject.transform.SetParent(this.transform);
                 handObject.GameObject.transform.localPosition = itemPos;
+                break;
             }
         }
     }

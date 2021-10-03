@@ -23,20 +23,18 @@ public class Shovel : MonoBehaviour, IHandObject
     public bool Active { get; set; }
 
 
-    public IFixableThing FixableThing { get; set; }
+    public Reactor Reactor { get; set; }
+    public Slime Slime { get; set; }
 
     public bool firstTime = false;
 
     public void UseObject(bool turha)
     {
-        bool slime;
-        slime = (FixableThing.GetType() == typeof(Slime));
-        if(slime && Active)
+        if(Slime != null)
         {
-            Active = false;
             //animator.SetBool("Vesi", false);
             //Debug.Log("tyhäj");
-            FixableThing.Fix();
+            Slime.Fix();
             //FindObjectOfType<AudioManager>().Play("Vesi heitto");
             if (firstTime == true)
             {

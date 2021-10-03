@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slime : MonoBehaviour, IFixableThing
+public class Slime : MonoBehaviour
 {
 
     PlayerMovement player;
@@ -23,7 +23,7 @@ public class Slime : MonoBehaviour, IFixableThing
             player = collision.GetComponent<PlayerMovement>();
             if (player.handObject != null)
             {
-                player.handObject.FixableThing = this;
+                player.handObject.Slime = this;
             }
         }
     }
@@ -36,7 +36,7 @@ public class Slime : MonoBehaviour, IFixableThing
             {
                 if (player.handObject != null)
                 {
-                    player.handObject.FixableThing = null;
+                    player.handObject.Slime = null;
                 }
             }
         }

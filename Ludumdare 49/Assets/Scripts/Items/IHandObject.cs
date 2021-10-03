@@ -7,7 +7,8 @@ public interface IHandObject
     GameObject GameObject { get; set; }
     string ObjectName   { get; set; }
     bool Active { get; set; }
-    IFixableThing FixableThing { get; set; }
+    Reactor Reactor { get; set; }
+    Slime Slime { get; set; }
 
     void UseObject(bool field);  
 }

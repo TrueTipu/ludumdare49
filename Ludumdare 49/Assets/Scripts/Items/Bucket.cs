@@ -34,23 +34,20 @@ public class Bucket : MonoBehaviour, IHandObject
         }
     }
 
-    public IFixableThing FixableThing { get; set; }
+    public Reactor Reactor { get; set; }
+    public Slime Slime { get; set; }
+
 
     public bool firstTime = false;
 
     public void UseObject(bool river)
     {
-        bool reactor = false;
-        if(FixableThing != null)
-        {
-            reactor = (FixableThing.GetType() == typeof(Reactor));
-        }
-        if(reactor && Active)
+        if(Reactor != null && Active)
         {
             Active = false;
             animator.SetBool("Vesi", false);
             Debug.Log("tyhäj");
-            FixableThing.Fix();
+            Reactor.Fix();
             FindObjectOfType<AudioManager>().Play("Vesi heitto");
             if (firstTime == true)
             {
