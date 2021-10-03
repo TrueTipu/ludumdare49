@@ -262,6 +262,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8888549074587944443, guid: ed15f3b06fc6d09479e187072a333e86, type: 3}
   m_PrefabInstance: {fileID: 335734119}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &542575813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5387612286957964558, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
+  m_PrefabInstance: {fileID: 1475566386}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1475566386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1142,7 +1147,7 @@ PrefabInstance:
     - target: {fileID: 245679098744559444, guid: fc36e81357785a94c82b8c31e6ca144f, type: 3}
       propertyPath: eventDatas.Array.data[2].action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 542575813}
     - target: {fileID: 245679098744559444, guid: fc36e81357785a94c82b8c31e6ca144f, type: 3}
       propertyPath: eventDatas.Array.data[2].action.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
