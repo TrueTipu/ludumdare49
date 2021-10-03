@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            
+            Invoke("Music", 0.1f);           
         }
         else
         {
@@ -30,6 +30,10 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    void Music()
+    {
+        FindObjectOfType<AudioManager>().Play("musa");
+    }
     public void Stop(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -41,7 +45,5 @@ public class AudioManager : MonoBehaviour
         Sound s = Array.Find(sounds, sound => sound.name == name);
 
         s.source.Play();
-
-
     }
 }

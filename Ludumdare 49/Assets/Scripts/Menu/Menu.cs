@@ -7,10 +7,7 @@ public class Menu : MonoBehaviour
 {
     public Animator dayAnim;
 
-    void Start()
-    {
-        FindObjectOfType<AudioManager>().Play("musa");
-    }
+
     public void PlayGame()
     {
         StartCoroutine(LoadScene());

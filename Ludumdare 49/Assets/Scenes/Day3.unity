@@ -1981,18 +1981,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1987204501135547970, guid: 9960d0d4cd6e8e745a70a21836bd9d6e, type: 3}
-      propertyPath: m_Size.y
-      value: 1.5197476
-      objectReference: {fileID: 0}
-    - target: {fileID: 1987204501135547970, guid: 9960d0d4cd6e8e745a70a21836bd9d6e, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.005815327
-      objectReference: {fileID: 0}
-    - target: {fileID: 1987204501135547970, guid: 9960d0d4cd6e8e745a70a21836bd9d6e, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.029843152
-      objectReference: {fileID: 0}
     - target: {fileID: 5759954861023564773, guid: 9960d0d4cd6e8e745a70a21836bd9d6e, type: 3}
       propertyPath: m_Name
       value: Lapio
