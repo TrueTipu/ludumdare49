@@ -289,11 +289,6 @@ Transform:
   m_Father: {fileID: 1090459972}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &183738969 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1951368487, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
-  m_PrefabInstance: {fileID: 5387612288251728291}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &303520989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1302,24 +1297,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1851417154 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5387612287596660772, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
-  m_PrefabInstance: {fileID: 5387612288251728291}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1851417155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851417154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dad0e17a49452af41b132184eebd5bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dayAnim: {fileID: 183738969}
 --- !u!4 &2005997466 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8888549074587944443, guid: ed15f3b06fc6d09479e187072a333e86, type: 3}
@@ -1536,7 +1513,7 @@ PrefabInstance:
     - target: {fileID: 5387612288749296051, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1851417155}
+      objectReference: {fileID: 0}
     - target: {fileID: 5387612288749296051, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1552,6 +1529,10 @@ PrefabInstance:
     - target: {fileID: 5387612288749296051, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7458276306677811594, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
