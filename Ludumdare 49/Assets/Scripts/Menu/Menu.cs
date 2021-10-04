@@ -15,8 +15,9 @@ public class Menu : MonoBehaviour
 
     IEnumerator LoadScene()
     {
+        Time.timeScale = 1;
         dayAnim.SetTrigger("end");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSecondsRealtime(1.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
