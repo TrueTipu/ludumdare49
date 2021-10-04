@@ -53,6 +53,10 @@ public class ReactorManager : MonoBehaviour
         {
             waitTime = eventDatas[currentEvent].time;
         }
+        else
+        {
+            Time.timeScale = 0;
+        }
     }
 
     public void Log1()

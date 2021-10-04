@@ -15,6 +15,11 @@ public class DayTime : MonoBehaviour
     [SerializeField]
     Image sun;
 
+    [SerializeField]
+    Image GameOver;
+
+    public static int reactorsDestoyed;
+
 
     void Awake()
     {
@@ -25,6 +30,12 @@ public class DayTime : MonoBehaviour
     {
         while(true)
         {
+            if(reactorsDestoyed > 1)
+            {
+                GameOver.gameObject.SetActive(true);
+                Time.timeScale = 0;
+                break;
+            }
             timer += 0.2f;
             moon.fillAmount = timer / daytime;
             sun.fillAmount = 1 - timer / daytime;
@@ -33,6 +44,7 @@ public class DayTime : MonoBehaviour
             {
                 break;
             }
+
         }
     }
 }

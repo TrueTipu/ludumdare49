@@ -72,6 +72,7 @@ public class Reactor : MonoBehaviour
                 shake.CamShake();
                 active = false;
                 Instantiate(effect, transform.position, Quaternion.identity);
+                DayTime.reactorsDestoyed++;
                 DifficultyIncrease();
             }
         }
