@@ -23,13 +23,18 @@ public class SlimeColor : MonoBehaviour
             slimes = FindObjectsOfType<Slime>().Length;
             if(slimes > 0)
             {
-                image.color = new Color(255, 255, 255, (image.color.a + (speed * slimes)));
+                image.color = new Color(1, 1, 1, (image.color.a + (speed * slimes)));
             }
             else
             {
-                image.color = new Color(255, 255, 255, (image.color.a - speed * 2));
+                image.color = new Color(1, 1, 1, (image.color.a - speed * 2));
             }
             yield return new WaitForSeconds(0.5f);
+            if(image.color.a > 0.99f)
+            {
+                Debug.Log("moi");
+                DayTime.ready = true;
+            }
         }
     }
 }

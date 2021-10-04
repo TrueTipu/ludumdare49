@@ -20,6 +20,7 @@ public class DayTime : MonoBehaviour
 
     public static int reactorsDestoyed;
 
+    public static bool ready;
 
     void Awake()
     {
@@ -30,7 +31,7 @@ public class DayTime : MonoBehaviour
     {
         while(true)
         {
-            if(reactorsDestoyed > 1)
+            if(reactorsDestoyed > 1 || ready)
             {
                 GameOver.gameObject.SetActive(true);
                 Time.timeScale = 0;
