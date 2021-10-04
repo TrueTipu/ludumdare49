@@ -71,13 +71,13 @@ MonoBehaviour:
   - name: musa
     clip: {fileID: 8300000, guid: f065bde08cbcb464caa01a9448b31d06, type: 3}
     loop: 1
-    volume: 0.7
+    volume: 1
     pitch: 1
     source: {fileID: 0}
   - name: Drop
     clip: {fileID: 8300000, guid: e81801ccd3b00b54aa465f70e7ed3494, type: 3}
     loop: 0
-    volume: 1
+    volume: 0.072
     pitch: 1
     source: {fileID: 0}
   - name: Pick
