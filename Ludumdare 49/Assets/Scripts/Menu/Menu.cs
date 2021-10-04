@@ -10,15 +10,20 @@ public class Menu : MonoBehaviour
 
     public void PlayGame()
     {
-        StartCoroutine(LoadScene());
+        StartCoroutine(LoadScene(1));
     }
 
-    IEnumerator LoadScene()
+    public void Reload()
     {
-        Time.timeScale = 1;
+        StartCoroutine(LoadScene(0));
+    }
+
+    IEnumerator LoadScene(int index)
+    {
         dayAnim.SetTrigger("end");
-        yield return new WaitForSecondsRealtime(1f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        yield return null;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + index);
     }
 
 }

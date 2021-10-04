@@ -15,6 +15,7 @@ public class TutorialText : MonoBehaviour
 
     private void Start()
     {
+        index = 0;
         instance = this;
         text.text = lines[index];
     }
