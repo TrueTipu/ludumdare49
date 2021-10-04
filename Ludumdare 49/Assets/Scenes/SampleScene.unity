@@ -1661,11 +1661,11 @@ PrefabInstance:
       objectReference: {fileID: 1093181813}
     - target: {fileID: 245679098744559444, guid: fc36e81357785a94c82b8c31e6ca144f, type: 3}
       propertyPath: reactorDatas.Array.data[0].baseTime
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 245679098744559444, guid: fc36e81357785a94c82b8c31e6ca144f, type: 3}
       propertyPath: reactorDatas.Array.data[1].baseTime
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 245679098744559444, guid: fc36e81357785a94c82b8c31e6ca144f, type: 3}
       propertyPath: reactorDatas.Array.data[0].difficulty
