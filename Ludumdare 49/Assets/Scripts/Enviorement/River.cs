@@ -6,6 +6,7 @@ public class River/*forgeGames*/ : MonoBehaviour
 {
     PlayerMovement player;
     Bucket bucket;
+    public bool firstTime = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,6 +14,11 @@ public class River/*forgeGames*/ : MonoBehaviour
         {
             player = collision.GetComponent<PlayerMovement>();
             player.river = true;
+            if (firstTime == true)
+            {
+                TutorialText.NextLine();
+                firstTime = false;
+            }
         }
     }
 

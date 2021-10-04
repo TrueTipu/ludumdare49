@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour
     {
         Time.timeScale = 1;
         dayAnim.SetTrigger("end");
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

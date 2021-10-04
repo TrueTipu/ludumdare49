@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     public float radius;
     public Vector3 itemPos;
 
+    public bool firstTime = false;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -92,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (moving == true)
             {
+
                 moving = false;
                 anim.SetBool("isRunning", false);
                 FindObjectOfType<AudioManager>().Stop("Kävely");
@@ -101,6 +104,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (moving == false)
             {
+                if (firstTime == true)
+                {
+                    TutorialText.NextLine();
+                    firstTime = false;
+                }
                 moving = true;
                 FindObjectOfType<AudioManager>().Play("Kävely");
             }

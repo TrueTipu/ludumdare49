@@ -7,7 +7,7 @@ public class TutorialText : MonoBehaviour
 {
     public List<string> lines;
 
-    int index = 0; 
+    public static int index = 0; 
     [SerializeField]
     TextMeshProUGUI text;
 

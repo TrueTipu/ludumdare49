@@ -35,6 +35,8 @@ public class Reactor : MonoBehaviour
 
     public GameObject effect;
 
+    public bool firstTime = false;
+
     public void SetData(ReactorData reactorData)
     {
         active = reactorData.active;
@@ -107,6 +109,11 @@ public class Reactor : MonoBehaviour
             if (player.handObject != null)
             {
                 player.handObject.Reactor = this;
+                if (firstTime == true && TutorialText.index == 3)
+                {
+                    TutorialText.NextLine();
+                    firstTime = false;
+                }
             }
         }
     }
