@@ -20,9 +20,10 @@ public class Menu : MonoBehaviour
 
     IEnumerator LoadScene(int index)
     {
-        dayAnim.SetTrigger("end");
-        yield return null;
         Time.timeScale = 1;
+        DayTime.reactorsDestoyed = 0;
+        DayTime.ready = false;
+        yield return null;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + index);
     }
 
