@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 itemPos;
 
     public bool firstTime = false;
+    public bool firstTime2 = false;
 
     private void Start()
     {
@@ -64,6 +65,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if(possibleHandObject.CompareTag("HandObject"))
             {
+                if (firstTime2 == true)
+                {
+                    TutorialText.NextLine();
+                    firstTime2 = false;
+                }
                 FindObjectOfType<AudioManager>().Play("Pick");
                 handObject = possibleHandObject.GetComponent<IHandObject>();
                 handObject.GameObject.transform.SetParent(this.transform);
