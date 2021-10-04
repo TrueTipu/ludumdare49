@@ -789,7 +789,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 22e0ac571425ee841a97c7d3af7cea06, type: 3}
     - target: {fileID: 2001193506570576812, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: lines.Array.data[0]
-      value: You can pickup bucket with E
+      value: You can pick up bucket with E
       objectReference: {fileID: 0}
     - target: {fileID: 2001193506570576812, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: lines.Array.data[1]

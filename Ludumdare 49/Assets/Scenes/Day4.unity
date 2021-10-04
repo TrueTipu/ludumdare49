@@ -159,7 +159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2001193506570576812, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: lines.Array.data[0]
-      value: Focus on slimes and red reactors avoid chaos
+      value: Focus on slimes and red reactors to avoid chaos
       objectReference: {fileID: 0}
     - target: {fileID: 2001193506570576812, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: lines.Array.data[1]

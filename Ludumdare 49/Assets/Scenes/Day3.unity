@@ -330,7 +330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2001193506570576812, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: lines.Array.data[1]
-      value: Dig green slimes with "Space"
+      value: Bury nuclear waste with "Space"
       objectReference: {fileID: 0}
     - target: {fileID: 2001193506570576812, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: lines.Array.data[2]
@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2001193506570576812, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: lines.Array.data[3]
-      value: You can dropshovel with E, to take bucket
+      value: You can drop shovel with E, to take bucket
       objectReference: {fileID: 0}
     - target: {fileID: 2001193506570576812, guid: f5abf1f0c1b32034cb50d7ee654f33cf, type: 3}
       propertyPath: lines.Array.data[4]
