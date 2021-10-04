@@ -18,12 +18,14 @@ public class DayTime : MonoBehaviour
     [SerializeField]
     Image GameOver;
 
+    [SerializeField]
     public static int reactorsDestoyed;
 
     public static bool ready;
 
     void Awake()
     {
+        reactorsDestoyed = 0;
         StartCoroutine(SlowUpdate());
     }
 
