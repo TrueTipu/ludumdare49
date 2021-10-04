@@ -6,6 +6,7 @@ public class Shovel : MonoBehaviour, IHandObject
 {
     [SerializeField]
     Animator animator;
+    public bool firstTime = false;
 
     public GameObject GameObject
     {
@@ -25,8 +26,6 @@ public class Shovel : MonoBehaviour, IHandObject
 
     public Reactor Reactor { get; set; }
     public Slime Slime { get; set; }
-
-    public bool firstTime = false;
 
     public void UseObject(bool turha)
     {

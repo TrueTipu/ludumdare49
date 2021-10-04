@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool firstTime = false;
     public bool firstTime2 = false;
+    public bool firstTime3 = false;
 
     private void Start()
     {
@@ -70,8 +71,13 @@ public class PlayerMovement : MonoBehaviour
                     TutorialText.NextLine();
                     firstTime2 = false;
                 }
+
                 FindObjectOfType<AudioManager>().Play("Pick");
                 handObject = possibleHandObject.GetComponent<IHandObject>();
+                if (firstTime3 == true && handObject.GetType() == typeof(Shovel))
+                {
+                    TutorialText.NextLine();
+                }
                 handObject.GameObject.transform.SetParent(this.transform);
                 handObject.GameObject.transform.localPosition = itemPos;
                 break;
@@ -81,6 +87,11 @@ public class PlayerMovement : MonoBehaviour
 
     void DropObject()
     {
+        if (firstTime3 == true && handObject.GetType() == typeof(Shovel))
+        {
+            TutorialText.NextLine();
+            firstTime3 = false;
+        }
         FindObjectOfType<AudioManager>().Play("Drop");
         handObject.GameObject.transform.SetParent(null);
         handObject.GameObject.transform.position = transform.position;
